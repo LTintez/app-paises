@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TablaPaisesComponent } from '../../components/tabla-paises/tabla-paises.component';
 
 @Component({
   selector: 'app-capital-page',
   standalone: true,
-  imports: [],
+  imports: [TablaPaisesComponent],
   templateUrl: './capital-page.component.html',
   styleUrl: './capital-page.component.css'
 })
