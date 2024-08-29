@@ -1,15 +1,21 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px">
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh; position: fixed;">
   <h2 class="fs-4">Países</h2>
   <hr />
   <ul class="nav nav-pills flex-column mb-auto">
-    <li class="nav-item">
-      <a href="#" class="nav-link active" aria-current="page"> Por capital </a>
+    <li class="nav-item mb-2">
+      <button [routerLink]="['/capital']" routerLinkActive="active" class="btn btn-outline-primary w-100 text-start">
+        Por Capital
+      </button>
     </li>
-    <li>
-      <a href="#" class="nav-link"> Por país </a>
+    <li class="nav-item mb-2">
+      <button [routerLink]="['/']" routerLinkActive="active" class="btn btn-outline-primary w-100 text-start">
+        Por País
+      </button>
     </li>
-    <li>
-      <a href="#" class="nav-link"> Por región </a>
+    <li class="nav-item mb-2">
+      <button [routerLink]="['/region']" routerLinkActive="active" class="btn btn-outline-primary w-100 text-start">
+        Por Región
+      </button>
     </li>
   </ul>
 </div>
